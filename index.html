@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SkyCast Aura</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="weather-card">
+
+      <h1>SkyCast Aura</h1>
+      <p class="subtitle">Real-Time Weather Forecast</p>
+
+      <div class="search-box">
+        <input type="text" id="cityInput" placeholder="Enter city name...">
+        <button onclick="getWeather()">Search</button>
+      </div>
+
+      <div class="weather-info" id="weatherInfo">
+
+        <div class="weather-icon">
+          ☀️
+        </div>
+
+        <h2 id="city">London</h2>
+
+        <div class="temp" id="temp">
+          25°C
+        </div>
+
+        <div class="condition" id="condition">
+          Sunny
+        </div>
+
+        <div class="details">
+
+          <div class="detail-box">
+            <span>💧 Humidity</span>
+            <h3 id="humidity">60%</h3>
+          </div>
+
+          <div class="detail-box">
+            <span>🌬 Wind</span>
+            <h3 id="wind">12 km/h</h3>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
